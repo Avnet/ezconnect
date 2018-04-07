@@ -23,7 +23,7 @@ void print_MAC(NetworkInterface* network_interface, bool log_messages);
  *                       config done via mbed_app.json (see README.md for details).
  * IN: bool  log_messages  print out diagnostics or not.
  */
-NetworkInterface* easy_connect(bool log_messages = false);
+NetworkInterface* easy_connect(bool log_messages);
 
 // This is address to mbed Device Connector
 #define MBED_SERVER_ADDRESS "coap://api.connector.mbed.com:5684"

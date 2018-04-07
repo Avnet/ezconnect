@@ -24,7 +24,7 @@ Add the following to your `mbed_app.json` file:
 EZ Connect has just one function that returns either a `NetworkInterface`-pointer or `NULL`:
 
 ```cpp
-#include "ez-connect.h"
+#include "easy-connect.h"
 
 int main(int, char**) {
     NetworkInterface* network = easy_connect(true); /* has 1 argument, enable_logging (pass in true to log to serial port) */
