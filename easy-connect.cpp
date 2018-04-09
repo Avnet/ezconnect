@@ -95,6 +95,10 @@ NetworkInterface* easy_connect(bool log_messages) {
     if (log_messages) {
         printf("[EasyConnect] Using BG96\n");
     }
+    #if MBED_CONF_APP_BG96_DEBUG == true
+    printf("[EasyConnect] With BG96 debug output set to 0x%02X\n",MBED_CONF_APP_BG96_DEBUG_SETTING);
+    bg96.doDebug(MBED_CONF_APP_BG96_DEBUG_SETTING);
+    #endif
     network_interface = &bg96;
     connect_success = bg96.connect();
 #endif
