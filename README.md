@@ -36,7 +36,20 @@ int main(int, char**) {
     // Rest of your program
 }
 ```
+## BG96 overrides
+If you need to change the pins used by the BG96 driver, you can enter the following into your `mbed_app.json`:
 
+```json
+    "target_overrides": {
+        "*": {
+            "platform.bg96-library.bg96-tx": "D8",
+            "platform.bg96-library.bg96-rx": "D2",
+            "platform.bg96-library.bg96-reset": "D7",
+            "platform.bg96-library.bg96-wake": "D11",
+            "platform.bg96-library.bg96-pwrkey": "D10"
+       }
+   }
+```
 
 ## CR/LF in serial output
 
