@@ -1,4 +1,14 @@
 {
     "name": "easy-connect",
-    "macros": ["DEFAULT_APN=\"m2m.com.attz\""]
+    "macros": ["DEFAULT_APN=\"m2m.com.attz\""],
+    "target_overrides": {
+        "K64F" : {
+            "bg96-tx": "D1",
+            "bg96-rx": "D0"
+        },
+        "NUCLEO_L476RG" : {
+            "bg96-tx": "D8",
+            "bg96-rx": "D2"
+        }
+    }
 }
