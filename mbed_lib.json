@@ -1,4 +1,3 @@
 {
     "name": "easy-connect",
-    "macros": ["DEFAULT_APN=\"m2m.com.attz\""]
 }
